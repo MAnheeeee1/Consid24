@@ -2,9 +2,11 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 import json
+import codecs
+import http.client
 
 class LoanManager:
-    def __init__(self, map_data_path, awards_data_path):
+    def __init__(self, map_data_path="Map-Gothenburg.json", awards_data_path="Awards.json"):
         # Load configuration data
         self.map_data = self.load_json(map_data_path)
         self.awards_data = self.load_json(awards_data_path)
@@ -37,8 +39,19 @@ class LoanManager:
         }
 
     def load_json(self, file_path):
-        with open(file_path, 'r') as file:
-            return json.load(file)
+        try:
+            with codecs.open(file_path, 'r', encoding='utf-8-sig') as file:
+                return json.load(file)
+        except FileNotFoundError:
+            print(f"Error: Could not find file {file_path}")
+            raise
+        except json.JSONDecodeError as e:
+            print(f"Error: Invalid JSON format in file {file_path}")
+            print(f"Details: {str(e)}")
+            raise
+        except Exception as e:
+            print(f"Unexpected error reading {file_path}: {str(e)}")
+            raise
 
     def calculate_credit_score(self, customer):
         # Basic credit score calculation
@@ -135,13 +148,59 @@ class LoanManager:
 
         return game_input
 
-def main():
-    loan_manager = LoanManager("Map.json", "Awards.json")
-    game_input = loan_manager.generate_game_input()
-    
-    # Save or send game input
-    with open('game_input.json', 'w') as f:
-        json.dump(game_input, f, indent=2)
+    def submit_to_api(self, game_input, api_key):
+        """Submit game input to the API and get feedback"""
+        try:
+            conn = http.client.HTTPSConnection("api.considition.com")
+            headers = {
+                "Content-Type": "application/json",
+                "x-api-key": api_key
+            }
+            
+            conn.request("POST", "/game", json.dumps(game_input), headers)
+            response = conn.getresponse()
+            result = json.loads(response.read().decode())
+            
+            conn.close()
+            return result
+        except Exception as e:
+            print(f"API submission error: {str(e)}")
+            raise
 
-if __name__ == "__main__":
-    main()
+def test_multiple_variations(api_key, num_variations=5):
+    loan_manager = LoanManager()
+    best_score = float('-inf')
+    best_input = None
+    
+    for i in range(num_variations):
+        game_input = loan_manager.generate_game_input()
+        api_response = loan_manager.submit_to_api(game_input, api_key)
+        
+        if 'score' in api_response and api_response['score'] > best_score:
+            best_score = api_response['score']
+            best_input = game_input
+            
+        print(f"Variation {i+1} score: {api_response.get('score', 'N/A')}")
+    
+    print(f"\nBest score: {best_score}")
+    # Save best input
+    with open('best_game_input.json', 'w', encoding='utf-8') as f:
+        json.dump(best_input, f, indent=2)
+    
+    return best_input, best_score
+
+def main():
+    try:
+        # Initialize the loan manager
+        loan_manager = LoanManager()
+        
+        # Generate game input
+        game_input = loan_manager.generate_game_input()
+        
+        # Save game input locally
+        with open('game_input.json', 'w', encoding='utf-8') as f:
+            json.dump(game_input, f, indent=2)
+        print("Successfully generated game input!")
+        
+        # Submit to API and get feedback
+        api_key = "YOUR_API_KEY_

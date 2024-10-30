@@ -1,0 +1,560 @@
+{
+  "MapName": "Gothenburg",
+  "Proposals": [
+    {
+      "CustomerName": "Gordon",
+      "MonthsToPayBackLoan": 24,
+      "YearlyInterestRate": 0.032
+    },
+    {
+      "CustomerName": "Glenn",
+      "MonthsToPayBackLoan": 24,
+      "YearlyInterestRate": 0.02
+    },
+    {
+      "CustomerName": "Kim",
+      "MonthsToPayBackLoan": 24,
+      "YearlyInterestRate": 0.036000000000000004
+    },
+    {
+      "CustomerName": "Emil",
+      "MonthsToPayBackLoan": 24,
+      "YearlyInterestRate": 0.042
+    },
+    {
+      "CustomerName": "Ada",
+      "MonthsToPayBackLoan": 24,
+      "YearlyInterestRate": 0.02
+    }
+  ],
+  "Iterations": [
+    {
+      "Gordon": {
+        "Type": "Award",
+        "Award": "HalfInterestRate"
+      },
+      "Glenn": {
+        "Type": "Award",
+        "Award": "NoInterestRate"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "IkeaDeliveryCheck"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "IkeaFoodCoupon"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Award",
+        "Award": "HalfInterestRate"
+      },
+      "Glenn": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Award",
+        "Award": "HalfInterestRate"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "HalfInterestRate"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Award",
+        "Award": "IkeaCheck"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "IkeaDeliveryCheck"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "HalfInterestRate"
+      },
+      "Ada": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Award",
+        "Award": "IkeaCheck"
+      },
+      "Glenn": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "IkeaFoodCoupon"
+      },
+      "Ada": {
+        "Type": "Award",
+        "Award": "IkeaCheck"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "IkeaFoodCoupon"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "IkeaDeliveryCheck"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Award",
+        "Award": "IkeaCheck"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Award",
+        "Award": "HalfInterestRate"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "HalfInterestRate"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Award",
+        "Award": "IkeaCheck"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "HalfInterestRate"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "IkeaDeliveryCheck"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Award",
+        "Award": "NoInterestRate"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "IkeaDeliveryCheck"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "IkeaFoodCoupon"
+      },
+      "Ada": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "IkeaFoodCoupon"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Award",
+        "Award": "IkeaCheck"
+      },
+      "Glenn": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "HalfInterestRate"
+      },
+      "Ada": {
+        "Type": "Award",
+        "Award": "IkeaCheck"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Award",
+        "Award": "NoInterestRate"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "IkeaDeliveryCheck"
+      },
+      "Emil": {
+        "Type": "Award",
+        "Award": "IkeaFoodCoupon"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Award",
+        "Award": "HalfInterestRate"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    },
+    {
+      "Gordon": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Glenn": {
+        "Type": "Award",
+        "Award": "GiftCard"
+      },
+      "Kim": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Emil": {
+        "Type": "Skip",
+        "Award": "None"
+      },
+      "Ada": {
+        "Type": "Skip",
+        "Award": "None"
+      }
+    }
+  ]
+}
